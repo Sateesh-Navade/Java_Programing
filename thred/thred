@@ -1,0 +1,66 @@
+The Thread class is a Impllimentation Class Of Runnable Interface
+
+Atributes Of Thread
+--------------------
+Thread class Defines 3 Attributes
+1. Thread ID :- the Thread id is a Unique identification Of the Each Thread Created In The JVM
+-the ID of The Thread Is Intitialized By the JVM Uniqely
+-we cant Assign OR change the Value of ID 
+
+2.Thread Name :- Each Thread Created In The JVM Should Have A NAme
+- The Programmer Can Provide His own Name for The Thread If there is No Default name
+
+3.Thread Prioprity :- it defines The Priority Of the Thread, Based On the Thread Priority The JVM 
+                      Allocats Thread Resources and Schedule The Exicution, 
+                      The Priority Is The Intiger Number from 1 to 10 Where 1 is a Lowest Prority And 10 is a Highest Priority,Defult priority is 5.
+ -Thread have Overloaded Constructor
+ 
+ Methods Of Thread
+ -----------------
+ 1.public int getId(); 
+ 2.public String getName(); 
+ 3.public int getPriority(); 
+ 4.public void setName(); 
+ 5.public void setPriority(); 
+ 6.public void start();  --> on Calling This Method The Thread Exicution Begains In the JVM
+ 7.public void stop();  --> on Calling This Method The Thread Exicution stoped In the JVM,which is in Exicution this Method Is Depricated
+ 8.public void run(); --> Yhe Run Method used To Define The Task of THe Thread. In Thread Class The Run Method has a Empty Body
+ 9.public void sleep(long time) throws IntruptedException --> the Method Causes THe Current Running Thread To Sleep For THe Specified Time ,
+                                                              the Time Valiue IS Always mesuserd In MiliSeconds
+ 10.public void currentThread();
+ -->This Method Returns The Ref to The Current Thread running In The Context
+ 
+ 
+ How To Create A Thread
+ ======================
+ simple create a Object OF Thread Class 
+   i.e 
+ Thread t=new Thread();
+ 
+ How To Create a Thread tas Defined ?
+ ====================================
+ 1.Define Class To Sub Class to thread Class
+ 2.Create Object of sub Class Object
+ 3.Create Object Of Sub Class object
+ 4.Call start(); 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
